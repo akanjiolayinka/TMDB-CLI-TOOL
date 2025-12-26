@@ -3,7 +3,11 @@
 import argparse
 import sys
 from typing import List, Dict
+from dotenv import load_dotenv
 from tmdb_client import TMDBClient
+
+# Load environment variables from .env file
+load_dotenv()
 
 
 def format_movie_output(movies: List[Dict]) -> None:
